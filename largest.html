@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Happy coding</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+   <link rel="icon" href="code.png">
+  
+   <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+	.jumbotron
+	{
+	height:auto;
+	}
+th,td
+{
+text-align:center;
+background:#E6E6FA;
+}
+td:hover
+{
+background:#AFEEEE	;
+}
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <img src="code.png" style="width:60px;height:50px;">
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar" >
+      <ul class="nav navbar-nav"  style="padding-left:30px;">
+        <li class="active"><a href="index.html">Home</a></li>
+		  <li><a href="contact.html">Contact</a></li>
+      
+
+      </ul>
+     
+    </div>
+  </div>
+</nav>
+<div class="jumbotron" >
+<div class="row">
+<div class=" col-md-12">
+
+<div class="col-md-3" style="background-color:black;">
+<p style="color:white;"> 3rd Largest Number</p>
+<img src="big.jpg" class="img-thumbnail" style="height:211px;width:319px;">
+<hr>
+<div class="panel">
+<table class="table">
+    <thead>
+      <tr>
+      <th  style="background:linear-gradient(to top, #ff0066 0%, #ff0000 100%);
+"><font style="color:black;font-size:19px;">Happy Coding</font> </th>
+        
+      </tr>  </thead>
+    <tbody>
+<tr>
+        <td style="font-size:19px;"><a href="index.html"> Home </a></td>
+      </tr>
+      <tr>
+        <td><a href="palindrome.html">Palindrome</a></td>
+      </tr>
+      <tr>
+        <td><a href="fibonacci.html">Fibonnaci </a></td>
+        
+      </tr>
+      <tr>
+        <td>	    <a href="factorial.html">Factorial </a></td>
+       
+      </tr>
+<tr>
+        <td><a href="bubble.html">Bubble Shot  </a></td>
+       
+      </tr>
+    </tbody>
+  </table>
+</div>
+</div>
+<div class="col-md-9">
+  <div class="container text-left"><h2 style="color:#990000">Program to find the 3rd largest numbers</h2>
+<h3>Description:</h3>
+	Create an integer array of capacity 50.
+	Take size of the array as input from users.
+	Using for loop, take array element as input from users and insert into the array.
+	After inserting all the elements of the array, consider the very first element of array to be the largest.
+	Run a for loop, from 1 to arraySize-1, extracting array element one by one and comparing it to the largest element.
+If largest element is smaller than the comparing element of array, then the largest element is updated to current element of array.
+	At the end, the largest element will hold the actual largest value present in the array.
+   <br>
+   
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-md-7 col-md-offset-2">
+<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+  <div class="panel panel-warning">
+    <div class="panel-heading" role="tab" id="headingOne"  style="background-color:#99e6ff">
+      <h4 class="panel-title"
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+       <font style="color:black;"> Code in Java </font>
+        </a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+      <div class="panel-body">
+public class ThirdLargestInArrayExample{   <br>
+public static int getThirdLargest(int[] a, int total){  <br>
+int temp;  <br>
+for (int i = 0; i < total; i++)   <br>
+        {  <br>
+            for (int j = i + 1; j < total; j++)   <br>
+            {  <br>
+                if (a[i] > a[j])   <br>
+                {  <br>
+                    temp = a[i];  <br>
+                    a[i] = a[j];  <br>
+                    a[j] = temp;<br>
+                }  <br>
+            }  <br>
+        }  <br>
+       return a[total-3];  <br>
+}  <br>
+public static void main(String args[]){  <br>
+int a[]={1,2,5,6,3,2};  <br>
+int b[]={44,66,99,77,33,22,55};  <br>
+System.out.println("Third Largest: "+getThirdLargest(a,6));  <br>
+System.out.println("Third Largest: "+getThirdLargest(b,7));  <br>
+}}    <br><br><br>
+
+<h3>Output:</h3>
+Third Largest:3 <br>
+Third Largest:66<br><br>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-warning">
+    <div class="panel-heading" role="tab" id="headingTwo"  style="background-color:#99e6ff">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+         <font style="color:black;">Code in C</font>
+        </a>
+      </h4>
+    </div>
+    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+      <div class="panel-body">
+void thirdLargest(int arr[], int arr_size) <br>
+{ <br>
+    /* There should be atleast three elements */ <br>
+    if (arr_size < 3) <br>
+    { <br>
+        printf(" Invalid Input "); <br>
+        return; <br>
+    }<br>
+ 
+    // Find first largest element <br>
+    int first = arr[0]; <br>
+    for (int i = 1; i < arr_size ; i++) <br>
+        if (arr[i] > first) <br>
+            first = arr[i]; <br>
+ 
+    // Find second largest element <br>
+    int second = INT_MIN; <br>
+    for (int i = 0; i < arr_size ; i++) <br>
+        if (arr[i] > second && arr[i] < first) <br>
+            second = arr[i]; <br>
+  
+    // Find third largest element <br>
+    int third = INT_MIN; <br>
+    for (int i = 0; i < arr_size ; i++) <br>
+        if (arr[i] > third && arr[i] < second) <br>
+            third = arr[i]; <br>
+ 
+    printf("The third Largest element is %d\n", third);<br>
+} <br>
+<br><br>
+
+<h3>Output:</h3>
+The third Largest element is 13 <br>
+     </div>
+    </div>
+  </div>
+ 
+  </div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+  
+
+
+
+<footer class="container-fluid text-left" style="background-color:black;color:white">
+  <p>copyright&copy2018</p>
+</footer>
+
+
+</body>
+</html>
+<script>
+$(document).ready(function(){
+ $("a.collapsed").click(function(){
+      $(this).find(".btn:contains('answer')").toggleClass("collapsed");
+  });
+ });
+
+</script>

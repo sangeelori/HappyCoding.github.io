@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Happy coding</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+   <link rel="icon" href="code.png">
+  
+   <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+	.jumbotron
+	{
+	height:auto;
+	}
+th,td
+{
+text-align:center;
+background:#E6E6FA;
+}
+td:hover
+{
+background:#AFEEEE	;
+}
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <img src="code.png" style="width:60px;height:50px;">
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar" >
+      <ul class="nav navbar-nav"  style="padding-left:30px;">
+        <li class="active"><a href="index.html">Home</a></li>
+  <li><a href="contact.html">Contact</a></li>
+
+      </ul>
+     
+    </div>
+  </div>
+</nav>
+<div class="jumbotron" >
+<div class="row">
+<div class=" col-md-12">
+
+<div class="col-md-3" style="background-color:black;">
+<p style="color:white;"> Factorial</p>
+<img src="factorial.jpg" class="img-thumbnail" style="height:211px;width:319px;">
+<hr>
+<div class="panel">
+<table class="table">
+    <thead>
+      <tr>
+      <th  style="background:linear-gradient(to top, #ff0066 0%, #ff0000 100%);
+"><font style="color:black;font-size:19px;">Happy Coding</font> </th>
+        
+      </tr>  </thead>
+    <tbody>
+<tr>
+        <td style="font-size:19px;"><a href="index.html"> Home </a></td>
+      </tr>
+      <tr>
+        <td><a href="palindrome.html">Palindrome</a></td>
+      </tr>
+      <tr>
+        <td><a href="fibonacci.html">Fibonnaci </a></td>
+        
+      </tr>
+      <tr>
+        <td>	    <a href="bubble.html">Bubble Shot </a></td>
+       
+      </tr>
+<tr>
+        <td><a href="largest.html">3rd Largest Number  </a></td>
+       
+      </tr>
+    </tbody>
+  </table>
+</div>
+</div>
+<div class="col-md-9">
+  <div class="container text-left"><h2 style="color:#990000">Program to print factorial numbers</h2>
+<h3>Description:</h3>
+The factorial, symbolized by an exclamation mark (!), is a quantity defined for all integer s greater than or equal to 0.
+
+For an integer n greater than or equal to 1, the factorial is the product of all integers less than or equal to n but greater 
+than or equal to 1. The factorial value of 0 is defined as equal to 1. The factorial values for negative integers are not defined.
+   <br>
+   
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-md-7 col-md-offset-2">
+<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+  <div class="panel panel-warning">
+    <div class="panel-heading" role="tab" id="headingOne"  style="background-color:#99e6ff">
+      <h4 class="panel-title"
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+       <font style="color:black;"> Code in Java </font>
+        </a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+      <div class="panel-body">
+public class JavaExample { <br>
+
+    public static void main(String[] args) { <br>
+
+    	//We will find the factorial of this number <br>
+        int number = 5; <br>
+        long fact = 1; <br>
+        for(int i = 1; i <= number; i++) <br>
+        { <br>
+            fact = fact * i; <br>
+        } <br>
+        System.out.println("Factorial of "+number+" is: "+fact); <br>
+    } <br>
+}<br><br><br>
+
+<h3>Output:</h3>
+Factorial of 5 is: 120<br><br>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-warning">
+    <div class="panel-heading" role="tab" id="headingTwo"  style="background-color:#99e6ff">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+         <font style="color:black;">Code in C</font>
+        </a>
+      </h4>
+    </div>
+    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+      <div class="panel-body">
+#include <stdio.h> <br>
+int main() <br>
+{ <br>
+    int n, i; <br>
+    unsigned long long factorial = 1; <br>
+
+    printf("Enter an integer: "); <br>
+    scanf("%d",&n); <br>
+
+    // show error if the user enters a negative integer <br>
+    if (n < 0) <br>
+        printf("Error! Factorial of a negative number doesn't exist."); <br>
+
+    else <br>
+    { <br>
+        for(i=1; i<=n; ++i) <br>
+        { <br>
+            factorial *= i;              // factorial = factorial*i; <br>
+        } <br>
+        printf("Factorial of %d = %llu", n, factorial); <br>
+    } <br>
+
+    return 0; <br>
+}<br><br>
+
+<h3>Output:</h3>
+Enter an integer: 10 <br>
+Factorial of 10 = 3628800  <br>
+       </div>
+    </div>
+  </div>
+ 
+  </div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+  
+
+
+
+<footer class="container-fluid text-left" style="background-color:black;color:white">
+  <p>copyright&copy2018</p>
+</footer>
+</body>
+</html>
+<script>
+$(document).ready(function(){
+ $("a.collapsed").click(function(){
+      $(this).find(".btn:contains('answer')").toggleClass("collapsed");
+  });
+ });
+
+</script>

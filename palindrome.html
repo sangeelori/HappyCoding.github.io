@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Happy coding</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+   <link rel="icon" href="code.png">
+  
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+	.jumbotron
+	{
+	height:auto;
+	}
+th,td
+{
+text-align:center;
+background:#E6E6FA;
+}
+td:hover
+{
+background:#AFEEEE;
+}
+a{
+text-decoration:none;
+}
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <img src="code.png" style="width:60px;height:50px;">
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar" >
+      <ul class="nav navbar-nav"  style="padding-left:30px;">
+        <li class="active"><a href="index.html">Home</a></li>
+		  <li><a href="contact.html">Contact</a></li>
+      
+
+      </ul>
+     
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron" >
+<div class="row">
+<div class=" col-md-12">
+
+<div class="col-md-3" style="background-color:black;">
+<p style="color:white;"> Palindrome</p>
+<img src="palindrome.png" class="img-thumbnail" style="height:211px;width:319px;">
+<hr>
+<div class="panel">
+<table class="table">
+    <thead>
+      <tr>
+      <th  style="background:linear-gradient(to top, #ff0066 0%, #ff0000 100%);
+"><font style="color:black;font-size:19px;">Happy Coding</font> </th>
+        
+      </tr>  </thead>
+    <tbody>
+<tr>
+        <td style="font-size:19px;"><a href="index.html"> Home </a></td>
+      </tr>
+      <tr>
+        <td><a href="fibonacci.html">Fibonnacci</a></td>
+      </tr>
+      <tr>
+        <td><a href="factorial.html">Factorial </a></td>
+        
+      </tr>
+      <tr>
+        <td>	    <a href="bubble.html">Bubble Shot </a></td>
+       
+      </tr>
+<tr>
+        <td><a href="largest.html">3rd Largest Number  </a></td>
+       
+      </tr>
+    </tbody>
+  </table>
+</div>
+</div>
+<div class="col-md-9">
+  <div class="container text-left">
+
+<span style="color:#990000;font-size:24px">Program to check if it is a palindrome or not</span>
+<h3>Description:</h3>
+This is a Java Program to Reverse a Number & Check if it is a Palindrome. A palindrome is a word, phrase, number, or other sequence of characters which reads the same backward or forward.
+Enter any integer as an input. After that we perform various operations like modulus and division to reverse the number and check whether the given integer is palindrome or not. Hence we generate the output accordingly.
+
+Here is the source code of the Java Program to Reverse a Number & Check if it is a Palindrome. The Java program is successfully compiled and run on a Windows system. The program output is also shown below.
+   <br>
+   <h4> Example:
+
+"A man, a plan, a canal: Panama" is a palindrome. "race a car" is not a palindrome.</h4>
+  
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-md-7 col-md-offset-2">
+<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+  <div class="panel panel-warning">
+    <div class="panel-heading" role="tab" id="headingOne"  style="background-color:#99e6ff">
+      <h4 class="panel-title"
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+       <font style="color:black;"> Code in Java </font>
+        </a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+      <div class="panel-body">
+       import java.util.Scanner;<br>
+public class Palindrome<br>
+{<br>
+    public static void main(String args[])<br>
+    {<br>
+        int n, m, a = 0,x;<br>
+        Scanner s = new Scanner(System.in);<br>
+        System.out.print("Enter any number:");<br>
+        n = s.nextInt();<br>
+        m = n;<br>
+        while(n > 0)<br>
+        {<br>
+            x = n % 10;<br>
+            a = a * 10 + x;<br>
+            n = n / 10;<br>
+        }<br>
+        if(a == m)<br>
+        {<br>
+            System.out.println("Given number "+m+" is Palindrome");<br>
+        }<br>
+        else<br>
+        {<br>
+            System.out.println("Given number "+m+" is Not Palindrome");<br>
+        }<br>
+    }<br>
+}<br><br><br>
+
+<h3>Output:</h3>
+$ javac Palindrome.java<br>
+$ java  Palindrome<br>
+ 
+Enter any number:121<br>
+Given number 121 is Palindrome<br>
+ 
+Enter any number:145<br>
+Given number 145 is Not Palindrome<br><br>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-warning">
+    <div class="panel-heading" role="tab" id="headingTwo"  style="background-color:#99e6ff">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+         <font style="color:black;">Code in C</font>
+        </a>
+      </h4>
+    </div>
+    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+      <div class="panel-body">
+       #include <stdio.h><br>
+int main()<br>
+{<br>
+    int n, reversedInteger = 0, remainder, originalInteger;<br>
+
+    printf("Enter an integer: ");<br>
+    scanf("%d", &n); <br>
+
+    originalInteger = n;<br>
+
+    // reversed integer is stored in variable <br>
+    while( n!=0 )<br>
+    {<br>
+        remainder = n%10;<br>
+        reversedInteger = reversedInteger*10 + remainder;<br>
+        n /= 10;<br>
+    }<br>
+
+    // palindrome if orignalInteger and reversedInteger are equal<br>
+    if (originalInteger == reversedInteger)<br>
+        printf("%d is a palindrome.", originalInteger);<br>
+    else<br>
+        printf("%d is not a palindrome.", originalInteger);<br>
+    
+    return 0;<br>
+}<br><br>
+
+<h3>Output:</h3>
+Enter an integer: 1001<br>
+1001 is a palindrome.
+      </div>
+    </div>
+  </div>
+ 
+  </div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+  
+
+
+
+<footer class="container-fluid text-left" style="background-color:black;color:white">
+  <p>copyright&copy2018</p>
+</footer>
+
+</body>
+</html>
+<script>
+$(document).ready(function(){
+ $("a.collapsed").click(function(){
+      $(this).find(".btn:contains('answer')").toggleClass("collapsed");
+  });
+ });
+
+</script>
